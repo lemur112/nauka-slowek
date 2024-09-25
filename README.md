@@ -2,7 +2,7 @@
 
 Opis dzia³ania poszczególnych funkcji:
 
-```
+`
 private void check_Clicked(object sender, EventArgs e)
         {
             if (input.Text == words[currentWord])
@@ -30,4 +30,4 @@ private void check_Clicked(object sender, EventArgs e)
                 }
             } 
         }
-        ```
+        `
