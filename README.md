@@ -4,8 +4,7 @@ Opis dzia³ania poszczególnych funkcji:
 
 `
 private void check_Clicked(object sender, EventArgs e)
-        {
-        <br>
+        {\        
             if (input.Text == words[currentWord])
             {
                 DisplayAlert("Dobrze!", "Poprawna odpowiedŸ", "Okej");
