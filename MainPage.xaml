@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tlumaczenie.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="30">
+            <Label
+                VerticalOptions="Start"
+                Text="Przetłumacz słowo na język angielski"/>
+            <Label
+                VerticalOptions="Center"
+                Text="" 
+                FontSize="48"
+                FontAttributes="Bold"
+                x:Name="slowo"
+                Loaded="slowo_Loaded"/>
+            <HorizontalStackLayout>
+                <Entry
+                    VerticalOptions="Center"
+                    x:Name="input"/>
+                <Button
+                    Text="Sprawdź"
+                    x:Name="check"
+                    Clicked="check_Clicked"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="100">
+                <Label
+                    Text="Życia: "
+                    x:Name="pozostalezycia"
+                    Loaded="pozostalezycia_Loaded"
+                    VerticalOptions="Start"/>
+                <Label
+                    Text="Przetłumaczono: "
+                    x:Name="przetlumaczone"
+                    Loaded="przetlumaczone_Loaded"
+                    VerticalOptions="End"/>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
